@@ -1,0 +1,217 @@
+body{
+
+    background: linear-gradient(
+
+        180deg,
+
+        #071A33,
+
+        #0B2948
+
+    );
+
+    color:white;
+
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+
+}
+
+/* العنوان */
+
+.header{
+
+text-align:center;
+
+margin:55px 50px 12px;
+
+}
+
+.header h2{
+
+font-size:22px;
+
+color:#fff;
+
+margin-bottom:6px;
+
+font-weight:700;
+
+}
+
+.header p{
+
+font-size:14px;
+
+color:#AAB8C7;
+
+line-height:1.5;
+
+margin:0;
+
+}
+
+/* قائمة البنوك */
+
+.banks{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    padding:0 20px;
+
+}
+
+/* بطاقة البنك */
+
+.bank-card{
+
+    height:90px;
+
+    background:
+
+    rgba(16,45,78,0.85);
+
+    border-radius:22px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+
+}
+
+/* عند الاختيار */
+
+.bank-card.selected{
+
+    border:2px solid #D8AE55;
+
+    background:#16385D;
+
+}
+
+/* جهة النص */
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+/* أيقونة البنك */
+
+.bank-icon{
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#12345A;
+
+    color:#D8AE55;
+
+    font-size:28px;
+
+}
+
+/* اسم البنك */
+
+.bank-card h3{
+
+    color:white;
+
+    font-size:18px;
+
+    margin:0 0 6px;
+
+}
+
+/* الوصف */
+
+.bank-card small{
+
+    color:#B8C7D8;
+
+    font-size:14px;
+
+}
+
+/* علامة الصح */
+
+.check{
+
+    color:#D8AE55;
+
+    opacity:0;
+
+}
+
+.bank-card.selected .check{
+
+    opacity:1;
+
+}
+
+/* العداد */
+
+.selected-counter{
+
+    text-align:center;
+
+    color:#D8E2EF;
+
+    margin:25px;
+
+    font-size:16px;
+
+}
+
+/* زر متابعة */
+
+#continueBtn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:20px;
+
+    right:20px;
+
+    height:58px;
+
+    border-radius:20px;
+
+    border:none;
+
+    background:#D8AE55;
+
+    color:#071A33;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}

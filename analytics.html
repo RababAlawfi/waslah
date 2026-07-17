@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>وصلة | التحليلات</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/analytics.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="analytics-page">
+
+<header class="hero">
+
+<div>
+
+<small>لوحة التحليلات</small>
+
+<h2>نظرة مالية شاملة</h2>
+
+</div>
+
+<button class="back-btn"
+onclick="window.location.href='home.html'">
+
+<span class="material-icons-outlined">
+arrow_back_ios_new
+</span>
+
+</button>
+
+</header>
+
+<section class="summary-card">
+
+<div class="summary-box">
+
+<small>الدخل</small>
+
+<h3>15,000 ر.س</h3>
+
+<span class="up">
++8%
+</span>
+
+</div>
+
+<div class="summary-box">
+
+<small>المصروفات</small>
+
+<h3>8,250 ر.س</h3>
+
+<span class="down">
+-5%
+</span>
+
+</div>
+
+<div class="summary-box">
+
+<small>الادخار</small>
+
+<h3>6,750 ر.س</h3>
+
+<span class="up">
++14%
+</span>
+
+</div>
+
+</section>
+
+<section class="score-card">
+
+<div class="score-circle">
+
+92
+
+</div>
+
+<div class="score-text">
+
+<h3>
+
+الصحة المالية
+
+</h3>
+
+<p>
+
+أداؤك أفضل من 84٪ من المستخدمين هذا الشهر.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="chart-card">
+
+<div class="card-header">
+
+<h3>
+
+تحليل الإنفاق الشهري
+
+</h3>
+
+</div>
+
+<canvas id="expenseChart"></canvas>
+
+</section>
+<section class="categories-card">
+
+<div class="card-header">
+
+<h3>
+أعلى فئات الإنفاق
+</h3>
+
+<span>
+هذا الشهر
+</span>
+
+</div>
+
+<div class="category-item">
+
+<div class="category-info">
+
+<span class="material-icons-outlined">
+restaurant
+</span>
+
+<div>
+
+<h4>المطاعم</h4>
+
+<small>2,640 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>32%</strong>
+
+</div>
+
+<div class="category-item">
+
+<div class="category-info">
+
+<span class="material-icons-outlined">
+shopping_bag
+</span>
+
+<div>
+
+<h4>التسوق</h4>
+
+<small>1,980 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>24%</strong>
+
+</div>
+
+<div class="category-item">
+
+<div class="category-info">
+
+<span class="material-icons-outlined">
+directions_car
+</span>
+
+<div>
+
+<h4>النقل</h4>
+
+<small>1,485 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>18%</strong>
+
+</div>
+
+<div class="category-item">
+
+<div class="category-info">
+
+<span class="material-icons-outlined">
+home
+</span>
+
+<div>
+
+<h4>الفواتير</h4>
+
+<small>990 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>12%</strong>
+
+</div>
+
+</section>
+
+<section class="ai-card">
+
+<div class="ai-header">
+
+<span class="material-icons-outlined">
+psychology
+</span>
+
+<h3>
+وصلة AI
+</h3>
+
+</div>
+
+<p id="aiTip">
+
+تحليلك المالي ممتاز.
+إذا خفضت إنفاق المطاعم بنسبة 15٪ فستوفر أكثر من 1,200 ريال هذا الشهر.
+
+</p>
+
+<button
+class="ai-btn"
+onclick="window.location.href='ai.html'">
+
+عرض التحليل الكامل
+
+</button>
+
+</section>
+
+<section class="insights-card">
+
+<h3>
+
+أبرز الملاحظات
+
+</h3>
+
+<div class="insight">
+
+<span class="material-icons-outlined">
+trending_up
+</span>
+
+<p>
+ارتفع معدل الادخار مقارنة بالشهر الماضي.
+</p>
+
+</div>
+
+<div class="insight">
+
+<span class="material-icons-outlined">
+payments
+</span>
+
+<p>
+إنفاقك على المطاعم يمثل أعلى نسبة من المصروفات.
+</p>
+
+</div>
+
+<div class="insight">
+
+<span class="material-icons-outlined">
+emoji_events
+</span>
+
+<p>
+أنت قريب من تحقيق هدف الادخار الشهري.
+</p>
+
+</div>
+
+</section>
+<section class="comparison-card">
+
+<div class="card-header">
+
+<h3>
+مقارنة مع الشهر الماضي
+</h3>
+
+</div>
+
+<div class="compare-row">
+
+<span>الدخل</span>
+
+<div class="progress">
+<div class="progress-fill income" style="width:82%"></div>
+</div>
+
+<strong>+8%</strong>
+
+</div>
+
+<div class="compare-row">
+
+<span>المصروفات</span>
+
+<div class="progress">
+<div class="progress-fill expense" style="width:58%"></div>
+</div>
+
+<strong>-5%</strong>
+
+</div>
+
+<div class="compare-row">
+
+<span>الادخار</span>
+
+<div class="progress">
+<div class="progress-fill saving" style="width:91%"></div>
+</div>
+
+<strong>+14%</strong>
+
+</div>
+
+</section>
+
+<nav class="bottom-nav">
+
+<div class="nav-item"
+onclick="window.location.href='home.html'">
+
+<span class="material-icons-outlined">
+home
+</span>
+
+<small>
+الرئيسية
+</small>
+
+</div>
+
+<div class="nav-item"
+onclick="window.location.href='banks.html'">
+
+<span class="material-icons-outlined">
+account_balance
+</span>
+
+<small>
+الحسابات
+</small>
+
+</div>
+
+<div class="nav-item active">
+
+<span class="material-icons-outlined">
+insights
+</span>
+
+<small>
+التحليلات
+</small>
+
+</div>
+
+<div class="nav-item"
+onclick="window.location.href='ai.html'">
+
+<span class="material-icons-outlined">
+psychology
+</span>
+
+<small>
+وصلة AI
+</small>
+
+</div>
+
+<div class="nav-item"
+onclick="window.location.href='settings.html'">
+
+<span class="material-icons-outlined">
+settings
+</span>
+
+<small>
+الإعدادات
+</small>
+
+</div>
+
+</nav>
+
+</div>
+
+<script src="../js/analytics.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>وصلة | الميزانية</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/budget.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="budget-page">
+
+<header class="hero">
+
+<button class="back-btn" onclick="location.href='home.html'">
+
+<span class="material-icons-outlined">
+arrow_back_ios_new
+</span>
+
+</button>
+
+<div>
+
+<small>الإدارة المالية</small>
+
+<h2>ميزانيتي</h2>
+
+</div>
+
+</header>
+
+<section class="budget-summary">
+
+<div class="budget-header">
+
+<h3>ميزانية هذا الشهر</h3>
+
+<span class="status">
+ضمن الخطة
+</span>
+
+</div>
+
+<div class="budget-values">
+
+<div>
+
+<small>الدخل</small>
+
+<h2 id="incomeValue">
+15,000
+</h2>
+
+</div>
+
+<div>
+
+<small>المصروف</small>
+
+<h2 id="expenseValue">
+5,380
+</h2>
+
+</div>
+
+</div>
+
+<div class="remaining-card">
+
+<small>المتبقي</small>
+
+<h1 id="remainingValue">
+9,620 ر.س
+</h1>
+
+</div>
+
+</section>
+
+<section class="progress-card">
+
+<div class="progress-title">
+
+<h3>استهلاك الميزانية</h3>
+
+<span id="budgetPercent">
+
+36%
+
+</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-fill" id="progressFill"></div>
+
+</div>
+
+<p>
+
+أنت أنفقت 36٪ من ميزانيتك الشهرية حتى الآن.
+
+</p>
+
+</section>
+<section class="categories-card">
+
+<h3>أعلى فئات الإنفاق</h3>
+
+<div class="category-item">
+
+<div class="category-left">
+
+<span class="material-icons-outlined">
+restaurant
+</span>
+
+<div>
+
+<h4>المطاعم</h4>
+
+<small>1,200 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>22%</strong>
+
+</div>
+
+<div class="category-item">
+
+<div class="category-left">
+
+<span class="material-icons-outlined">
+shopping_bag
+</span>
+
+<div>
+
+<h4>التسوق</h4>
+
+<small>860 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>16%</strong>
+
+</div>
+
+<div class="category-item">
+
+<div class="category-left">
+
+<span class="material-icons-outlined">
+directions_car
+</span>
+
+<div>
+
+<h4>المواصلات</h4>
+
+<small>540 ر.س</small>
+
+</div>
+
+</div>
+
+<strong>10%</strong>
+
+</div>
+
+</section>
+
+<section class="ai-card">
+
+<div class="ai-header">
+
+<span class="material-icons-outlined">
+psychology
+</span>
+
+<h3>توصية وصلة AI</h3>
+
+</div>
+
+<p id="budgetAdvice">
+
+إذا خفضت الإنفاق على المطاعم بنسبة 15٪ هذا الشهر، يمكنك توفير حوالي <strong>180 ريال</strong> وإضافتها مباشرة إلى أهدافك الادخارية.
+
+</p>
+
+</section>
+
+<section class="comparison-card">
+
+<h3>مقارنة بالشهر الماضي</h3>
+
+<div class="comparison-grid">
+
+<div class="compare-box">
+
+<span class="material-icons-outlined">
+trending_up
+</span>
+
+<h4>الدخل</h4>
+
+<strong>+8%</strong>
+
+</div>
+
+<div class="compare-box">
+
+<span class="material-icons-outlined">
+trending_down
+</span>
+
+<h4>المصروف</h4>
+
+<strong>-12%</strong>
+
+</div>
+
+<div class="compare-box">
+
+<span class="material-icons-outlined">
+savings
+</span>
+
+<h4>الادخار</h4>
+
+<strong>+18%</strong>
+
+</div>
+
+</div>
+
+</section>
+<nav class="bottom-nav">
+
+<div class="nav-item" onclick="location.href='home.html'">
+
+<span class="material-icons-outlined">
+home
+</span>
+
+<small>الرئيسية</small>
+
+</div>
+
+<div class="nav-item" onclick="location.href='banks.html'">
+
+<span class="material-icons-outlined">
+account_balance
+</span>
+
+<small>الحسابات</small>
+
+</div>
+
+<div class="nav-item" onclick="location.href='analytics.html'">
+
+<span class="material-icons-outlined">
+insights
+</span>
+
+<small>التحليلات</small>
+
+</div>
+
+<div class="nav-item" onclick="location.href='ai.html'">
+
+<span class="material-icons-outlined">
+psychology
+</span>
+
+<small>وصلة AI</small>
+
+</div>
+
+<div class="nav-item active">
+
+<span class="material-icons-outlined">
+pie_chart
+</span>
+
+<small>الميزانية</small>
+
+</div>
+
+</nav>
+
+</div>
+
+<script src="../js/budget.js"></script>
+
+</body>
+</html>
