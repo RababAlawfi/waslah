@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>وصلة | الميزانية</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/budget.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="budget-page">
+
+<header class="hero">
+
+<button class="back-btn" onclick="location.href='home.html'" aria-label="الرجوع للرئيسية">
+
+<span class="material-icons-outlined" aria-hidden="true">
+arrow_back_ios_new
+</span>
+
+</button>
+
+<div>
+
+<small>الإدارة المالية</small>
+
+<h2>ميزانيتي</h2>
+
+</div>
+
+</header>
+
+<section class="budget-summary" aria-label="ملخص الميزانية الشهرية">
+
+<div class="budget-header">
+
+<h3>ميزانية هذا الشهر</h3>
+
+<span class="status">
+ضمن الخطة
+</span>
+
+</div>
+
+<div class="budget-values">
+
+<div>
+
+<small>الدخل</small>
+
+<h2 id="incomeValue">
+0
+</h2>
+
+</div>
+
+<div>
+
+<small>المصروف</small>
+
+<h2 id="expenseValue">
+0
+</h2>
+
+</div>
+
+</div>
+
+<div class="remaining-card">
+
+<small>المتبقي</small>
+
+<h1 id="remainingValue">
+0 ر.س
+</h1>
+
+</div>
+
+</section>
+
+<section class="progress-card" aria-label="نسبة استهلاك الميزانية">
+
+<div class="progress-title">
+
+<h3>استهلاك الميزانية</h3>
+
+<span id="budgetPercent">
+0%
+</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-fill" id="progressFill"></div>
+
+</div>
+
+<p id="progressNote">
+
+أنت أنفقت جزءًا من ميزانيتك الشهرية حتى الآن.
+
+</p>
+
+</section>
+
+<section class="categories-card" aria-label="أعلى فئات الإنفاق">
+
+<h3>أعلى فئات الإنفاق</h3>
+<small>حسب النسبة من إجمالي مصروفاتك هذا الشهر</small>
+
+<div id="categoriesList">
+<!-- تُبنى بنود الفئات ديناميكيًا عبر budget.js -->
+</div>
+
+</section>
+
+
+<nav class="bottom-nav">
+
+<div class="nav-item" onclick="location.href='home.html'">
+
+<span class="material-icons-outlined">
+home
+</span>
+
+<small>الرئيسية</small>
+
+</div>
+
+<div class="nav-item" onclick="location.href='banks.html'">
+
+<span class="material-icons-outlined">
+account_balance
+</span>
+
+<small>الحسابات</small>
+
+</div>
+
+<div class="nav-item" onclick="location.href='analytics.html'">
+
+<span class="material-icons-outlined">
+insights
+</span>
+
+<small>التحليلات</small>
+
+</div>
+
+<div class="nav-item" onclick="location.href='ai.html'">
+
+<span class="material-icons-outlined">
+psychology
+</span>
+
+<small>وصلة AI</small>
+
+</div>
+
+<div class="nav-item active">
+
+<span class="material-icons-outlined">
+pie_chart
+</span>
+
+<small>الميزانية</small>
+
+</div>
+
+</nav>
+
+</div>
+
+<script src="../js/budget.js"></script>
+
+</body>
+</html>

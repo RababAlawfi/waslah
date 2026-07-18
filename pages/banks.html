@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>وصلة | الحسابات</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/banks.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="banks-page">
+
+<header class="hero">
+
+<button class="back-btn" onclick="location.href='home.html'">
+<span class="material-icons-outlined">arrow_back_ios_new</span>
+</button>
+
+<div>
+<small>Open Banking</small>
+<h2>حساباتك</h2>
+</div>
+
+</header>
+
+<section class="balance-hero">
+<small>إجمالي الأصول</small>
+<h1 id="totalBalance">58,420</h1>
+<p>ريال سعودي عبر <span id="bankCount">2</span> بنوك مرتبطة</p>
+</section>
+
+<div class="card-track" id="cardTrack">
+
+<div class="bank-card-visual theme-navy"
+     data-name="مصرف الراجحي"
+     data-number="•••• •••• •••• 1029"
+     data-balance="37,020 ر.س"
+     data-updated="آخر تحديث قبل دقيقة">
+
+  <div class="card-top">
+    <span class="card-bank-name">مصرف الراجحي</span>
+    <span class="card-chip"></span>
+  </div>
+
+  <div class="card-number">•••• •••• •••• 1029</div>
+
+  <div class="card-bottom">
+    <span class="card-balance">37,020 ر.س</span>
+    <span class="card-status"><span class="status-dot"></span>متصل</span>
+  </div>
+
+</div>
+
+<div class="bank-card-visual theme-emerald"
+     data-name="بنك الإنماء"
+     data-number="•••• •••• •••• 4418"
+     data-balance="21,400 ر.س"
+     data-updated="آخر تحديث الآن">
+
+  <div class="card-top">
+    <span class="card-bank-name">بنك الإنماء</span>
+    <span class="card-chip"></span>
+  </div>
+
+  <div class="card-number">•••• •••• •••• 4418</div>
+
+  <div class="card-bottom">
+    <span class="card-balance">21,400 ر.س</span>
+    <span class="card-status"><span class="status-dot"></span>متصل</span>
+  </div>
+
+</div>
+
+<div class="bank-card-visual add-card" onclick="location.href='connect-bank.html'">
+  <span class="material-icons-outlined">add</span>
+  <span>ربط حساب جديد</span>
+</div>
+
+</div>
+
+<div class="card-dots" id="cardDots"></div>
+
+<section class="account-detail" id="accountDetail"></section>
+
+<div class="trust-strip">
+  <span class="material-icons-outlined">verified_user</span>
+  <p>بياناتك مؤمّنة عبر Open Banking المعتمد من ساما، ولا نطّلع على كلمات المرور الخاصة فيك.</p>
+</div>
+
+<nav class="bottom-nav">
+
+<div class="nav-item" onclick="location.href='home.html'">
+<span class="material-icons-outlined">home</span>
+<small>الرئيسية</small>
+</div>
+
+<div class="nav-item active" onclick="location.href='banks.html'">
+<span class="material-icons-outlined">account_balance</span>
+<small>الحسابات</small>
+</div>
+
+<div class="nav-item" onclick="location.href='analytics.html'">
+<span class="material-icons-outlined">insights</span>
+<small>التحليلات</small>
+</div>
+
+<div class="nav-item" onclick="location.href='ai.html'">
+<span class="material-icons-outlined">psychology</span>
+<small>وصلة AI</small>
+</div>
+
+<div class="nav-item" onclick="location.href='settings.html'">
+<span class="material-icons-outlined">settings</span>
+<small>الإعدادات</small>
+</div>
+
+</nav>
+
+</div>
+
+<script src="../js/banks.js"></script>
+
+</body>
+</html>
